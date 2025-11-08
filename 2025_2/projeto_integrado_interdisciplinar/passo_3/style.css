@@ -1,0 +1,81 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0.8rem 0;
+  transition: background 0.2s ease-in;
+}
+
+.transaction:hover {
+  background: #f0f8ff;
+}
+
+.details {
+  flex: 1;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.amount {
+  font-weight: bold;
+  text-align: right;
+  min-width: 100px;
+}
+
+.amount.positive {
+  color: #009900;
+}
+
+.amount.negative {
+  color: #cc0000;
+}
+.highlight {
+  background-color: #fff3cd;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .transaction {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .amount {
+    text-align: left;
+    margin-top: 0.3rem;
+  }
+}
